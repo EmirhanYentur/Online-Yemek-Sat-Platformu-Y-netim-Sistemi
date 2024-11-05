@@ -33,7 +33,7 @@ Belirlenen varlıklar arasında ilişkiler ve sayısal kısıtlamalar:
 - Sipariş - Ödeme Bilgileri: Her sipariş bir ödeme bilgisiyle ilişkilidir. (1:1)
 - Sipariş - Teslimat: Her sipariş bir teslimat kaydıyla ilişkilidir. (1:1)
 
---
+---
 
 Kullanıcı Rolleri ve Gereksinimler Projede kullanıcı rolleri ve gereksinimler:
 
