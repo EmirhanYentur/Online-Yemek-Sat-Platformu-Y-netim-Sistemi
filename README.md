@@ -8,6 +8,9 @@
 Fırat Üniversitesi BMU329 Veri Tabanı Sistemleri dersi 2. Öğretim Çift 15. Grup "Online Yemek Satış Platformu İçin Yönetim Sistemi" projesidir. Online Yemek Sipariş Sistemi Projesi
 Online Yemek Sipariş Sistemi Projesi
 
+Proje Amacı
+Bu projenin amacı, restoranların ve kullanıcıların bir araya gelerek yemek siparişlerinin kolayca verilmesini ve yönetilmesini sağlayan bir online yemek sipariş platformu oluşturmaktır. Sistem, kullanıcıların restoranlardan yemek siparişi vermesine, restoranların yemeklerini ve siparişlerini yönetmesine, kuryelerin teslimat sürecini takip etmesine, sistem yöneticisinin ise platformu genel olarak yönetmesine olanak tanır.
+
 Varlıklar ve Nitelikleri
 Projede yer alacak varlıklar ve nitelikleri şunlardır:
 
