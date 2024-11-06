@@ -1,7 +1,7 @@
 # Online-Yemek-Satış-Platformu-Yönetim-Sistemi
 ### Proje Ekibi
 
-- **Emirhan YENTURr** (225260062)
+- **Emirhan YENTUR** (225260062)
 - **Eyüp GÖK** (215260042)
 - **Emirhan GÜNEY** (225260008)
   
