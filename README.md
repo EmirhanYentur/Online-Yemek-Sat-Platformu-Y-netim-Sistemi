@@ -14,15 +14,15 @@ Bu projenin amacı, restoranların ve kullanıcıların bir araya gelerek yemek 
 Varlıklar ve Nitelikleri
 Projede yer alacak varlıklar ve nitelikleri şunlardır:
 
-- Kullanıcılar: (KullanıcıID, İsim, E-posta, Adres, Telefon, Şifre) - Sistemdeki kullanıcıları temsil eder.
-- Restoranlar: (RestoranID, RestoranAdı, Adres, Telefon, KategoriID) - Sipariş verilebilecek restoranları ifade eder.
-- Yemekler: (YemekID, YemekAdı, Açıklama, Fiyat, RestoranID, KategoriID) - Restoranların sunduğu yemekleri içerir.
-- Siparişler: (SiparişID, KullanıcıID, SiparişZamanı, ToplamFiyat, Durum) - Kullanıcıların verdiği siparişleri temsil eder.
-- Sipariş Detayları: (SiparişDetayID, SiparişID, YemekID, Miktar, YemekFiyatı) - Siparişlerdeki yemek detaylarını gösterir.
-- Ödeme Bilgileri: (ÖdemeID, SiparişID, ÖdemeTürü, ÖdemeDurumu, Tarih) - Sipariş ödemeleriyle ilgili bilgileri içerir.
-- Yorumlar ve Puanlar: (YorumID, KullanıcıID, RestoranID, Puan, YorumMetni, Tarih) - Kullanıcıların restoranlara yaptığı yorumları ve puanlamaları içerir.
-- Kategoriler: (KategoriID, KategoriAdı) - Restoran ve yemeklerin kategorilerini belirtir.
-- Teslimat: (TeslimatID, SiparişID, KuryeAdı, TeslimatDurumu, TahminiSüre) - Sipariş teslimat süreçlerini içerir.
+- Kullanıcılar: Sisteme kayıtlı kullanıcı bilgileri.
+Restoranlar: Hizmet sunan restoranlar.
+Yemekler: Restoranlarda sunulan yemekler.
+Kategoriler: Yemeklerin sınıflandırılması.
+Siparişler: Kullanıcıların verdiği sipariş bilgileri.
+Sipariş Detayları: Siparişlerde yer alan ürün bilgileri.
+Teslimatlar: Sipariş teslimat bilgileri.
+Ödemeler: Sipariş ödeme bilgileri.
+Puanlamalar: Kullanıcıların yorum ve puan bilgileri.
 
 ---
 Varlıklar Arasındaki İlişkiler ve Sayısal Kısıtlamalar
