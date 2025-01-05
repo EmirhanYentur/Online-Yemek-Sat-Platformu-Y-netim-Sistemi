@@ -1,0 +1,50 @@
+Kullanıcılar
+KullanıcıID, İsim, Eposta, Telefon, Şifre, Adres, SiparişAdet
+Primary Key: KullanıcıID
+
+Restoranlar
+RestoranID, RestoranAdi, Adres, Telefon, MutfakTuru, CalismaSaatleri
+Primary Key: RestoranID
+Foreign Key: Sahip → KullanıcıID (Kullanıcılar)
+
+Kategoriler
+KategoriID, KategoriAdi
+Primary Key: KategoriID
+
+Yemekler
+YemekID, YemekAdi, Aciklama, Fiyat, RestoranID
+Primary Key: YemekID
+Foreign Key: RestoranID → RestoranID (Restoranlar)
+
+Siparişler
+SiparişID, KullanıcıID, SiparişZamani, TeslimZamani, Durum, ToplamFiyat, TeslimatAdresi
+Primary Key: SiparişID
+Foreign Key: KullanıcıID → KullanıcıID (Kullanıcılar)
+
+SiparişDetayları
+SiparişDetayID, SiparişID, YemekID, YemekFiyati, Miktar
+Primary Key: SiparişDetayID
+Foreign Key: SiparişID → SiparişID (Siparişler)
+Foreign Key: YemekID → YemekID (Yemekler)
+
+Teslimatlar
+TeslimatID, SiparişID, TeslimatDurumu, KuryeAdi
+Primary Key: TeslimatID
+Foreign Key: SiparişID → SiparişID (Siparişler)
+
+Ödemeler
+ÖdemeID, SiparişID, ÖdemeTuru, ÖdemeBilgileri, ÖdemeDurumu, Tarih
+Primary Key: ÖdemeID
+Foreign Key: SiparişID → SiparişID (Siparişler)
+
+Puanlamalar
+PuanlamaID, KullanıcıID, RestoranID, Puan, Yorum, Tarih
+Primary Key: PuanlamaID
+Foreign Key: KullanıcıID → KullanıcıID (Kullanıcılar)
+Foreign Key: RestoranID → RestoranID (Restoranlar)
+
+Yemek_Kategori
+YemekID, KategoriID
+Primary Key: (YemekID, KategoriID)
+Foreign Key: YemekID → YemekID (Yemekler)
+Foreign Key: KategoriID → KategoriID (Kategoriler)
