@@ -18,40 +18,47 @@ yemekler, siparişler ve ödeme işlemleri gibi ana bileşenler içermektedir.
 Varlıklar ve Nitelikleri
 Projede yer alacak varlıklar ve nitelikleri şunlardır:
 
--Kullanıcılar: Sisteme kayıtlı kullanıcı bilgileri.
+1. Kullanıcılar: Sisteme kayıt olan kullanıcı bilgilerini tutar.
+2. Restoranlar: Sistem üzerinde hizmet veren restoranların bilgilerini muhafaza eder.
+3. Yemekler: Restoranlar tarafından sunulan yemeklerin adı.
+4. Kategoriler: Yemeklerin kategorilere göre sınıflandırıldığı yapı.
+5. Siparişler: Kullanıcıların verdiği sipariş bilgilerini tutar.
+6. Sipariş Detayları: Siparişlerde yer alan her bir ürünün detay bilgileri.
+7. Teslimatlar: Sipariş teslimat bilgilerini kayıt altına alır.
+8. Ödemeler: Siparişlerin ödeme bilgilerini saklar.
+9. Puanlamalar: Kullanıcıların restoranlara yaptıkları puanlama ve yorumlar.
+10.Yemek Kategori: Restoranlar tarafından sunulan yemeklerin sınıflandırılması
+   
+Belirlenen varlıklar arasındaki ilişkiler:
 
--Restoranlar: Hizmet sunan restoranlar.
-
--Yemekler: Restoranlarda sunulan yemekler.
-
--Kategoriler: Yemeklerin sınıflandırılması.
-
--Siparişler: Kullanıcıların verdiği sipariş bilgileri.
-
--Sipariş Detayları: Siparişlerde yer alan ürün bilgileri.
-
--Teslimatlar: Sipariş teslimat bilgileri.
-
--Ödemeler: Sipariş ödeme bilgileri.
-
--Puanlamalar: Kullanıcıların yorum ve puan bilgileri.
----
-Varlıklar Arasındaki İlişkiler ve Sayısal Kısıtlamalar
-Belirlenen varlıklar arasında ilişkiler ve sayısal kısıtlamalar:
-
-- Kullanıcı - Sipariş: Bir kullanıcı birden fazla sipariş verebilir, ancak her sipariş yalnızca bir kullanıcıya aittir. (1:N)
-- Sipariş - Sipariş Detayları: Bir sipariş birden fazla yemek içerebilir, her detay bir siparişe aittir. (1:N)
-- Restoran - Yemek: Bir restoran birden fazla yemek sunabilir, her yemek yalnızca bir restorana aittir. (1:N)
-- Kullanıcı - Yorum: Bir kullanıcı birden fazla yorum yapabilir, her yorum yalnızca bir kullanıcıya aittir. (1:N)
-- Yemek - Kategori: Bir yemek bir kategoriye aittir, bir kategori birden fazla yemeği içerir. (N:1)
-- Sipariş - Ödeme Bilgileri: Her sipariş bir ödeme bilgisiyle ilişkilidir. (1:1)
-- Sipariş - Teslimat: Her sipariş bir teslimat kaydıyla ilişkilidir. (1:1)
-
+1. Kullanıcılar:
+• Alanlar: (KullanıcıID(PK) , isim, Eposta, Telefon, Şifre, Adres, SiparişAdet)
+2. Restoranlar:
+• Alanlar:( RestoranID(PK) , RestoranAdi, Adres, Telefon, MutfakTuru, ÇalışmaSaatleri,
+Sahip)
+3. Kategoriler:
+• Alanlar:( KategoriID(PK) , KategoriAdi)
+4. Yemekler:
+• Alanlar: (YemekID(PK) , YemekAdi, Açıklama, Fiyat, RestoranID )
+5. Siparişler:
+• Alanlar:( SiparişID(PK) , KullanıcıID , SiparişZamanı, TeslimZamanı, Durum,
+ToplamFiyat, TeslimatAdresi)
+6. Sipariş Detayları:
+• Alanlar: (SiparişDetayID(PK) , SiparişID , YemekID , YemekFiyatı, Miktar)
+7. Teslimatlar:
+• Alanlar: (TeslimatID(PK) , SiparişID , TeslimatDurumu, KuryeAdi)
+8. Ödemeler:
+• Alanlar:( ÖdemeID(PK) , SiparişID , ÖdemeTuru, ÖdemeBilgileri, ÖdemeDurumu,
+Tarih)
+9. Puanlamalar:
+• Alanlar: (PuanlamaID(PK) , KullanıcıID , RestoranID , Puan, Yorum, Tarih)
+10. Yemek_Kategori:
+• Alanlar: (YemekID(PK) , KategoriID(PK) )
 ---
 
 Kullanıcı Rolleri ve Gereksinimler Projede kullanıcı rolleri ve gereksinimler:
 
--Müşteri: Restoranlardan yemek siparişi verebilir, sipariş geçmişini görüntüleyebilir, restoranlara yorum yapabilir.
+- Müşteri: Restoranlardan yemek siparişi verebilir, sipariş geçmişini görüntüleyebilir, restoranlara yorum yapabilir.
 - Restoran Yöneticisi: Yemek ekleyebilir, güncelleyebilir, siparişleri takip edebilir.
 - Kurye: Teslimat durumlarını güncelleyebilir, atanan siparişleri görüntüleyebilir.
 - Sistem Yöneticisi: Tüm restoranları, kullanıcıları ve siparişleri yönetebilir, gerektiğinde siparişleri iptal edebilir veya düzenleyebilir.
