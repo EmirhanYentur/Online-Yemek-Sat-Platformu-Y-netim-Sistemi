@@ -27,7 +27,6 @@ Projede yer alacak varlıklar ve nitelikleri şunlardır:
 7. Teslimatlar: Sipariş teslimat bilgilerini kayıt altına alır.
 8. Ödemeler: Siparişlerin ödeme bilgilerini saklar.
 9. Puanlamalar: Kullanıcıların restoranlara yaptıkları puanlama ve yorumlar.
-  
 10.Yemek Kategori: Restoranlar tarafından sunulan yemeklerin sınıflandırılması
    
 Belirlenen varlıklar arasındaki ilişkiler:
