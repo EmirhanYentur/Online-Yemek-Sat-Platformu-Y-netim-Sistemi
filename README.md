@@ -1,13 +1,10 @@
 # Online-Yemek-Satış-Platformu-Yönetim-Sistemi
 ### Proje Ekibi
 
-- **Emirhan YENTUR** (225260062)
-- **Eyüp GÖK** (215260042)
-- **Emirhan GÜNEY** (225260008)
+- **Emirhan YENTUR** 
+- **Eyüp GÖK** 
+- **Emirhan GÜNEY** 
   
-Fırat Üniversitesi BMU329 Veri Tabanı Sistemleri dersi 2. Öğretim Çift 15. Grup "Online Yemek Satış Platformu İçin Yönetim Sistemi" projesidir. Online Yemek Sipariş Sistemi Projesi
-Online Yemek Sipariş Sistemi Projesi
-
 ### Proje Amacı
 Bu proje, yemek sipariş sistemi için veri tabanı tasarımını ve uygulamasını ele almaktadır.
 Sistemin temel gayesi, kullanıcıların restoranlardan yemek siparişi vermelerini ve bu
