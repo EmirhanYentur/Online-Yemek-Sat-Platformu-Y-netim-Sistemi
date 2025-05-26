@@ -1,9 +1,4 @@
 # Online-Yemek-Satış-Platformu-Yönetim-Sistemi
-### Proje Ekibi
-
-- **Emirhan YENTUR** 
-- **Eyüp GÖK** 
-- **Emirhan GÜNEY** 
   
 ### Proje Amacı
 Bu proje, yemek sipariş sistemi için veri tabanı tasarımını ve uygulamasını ele almaktadır.
@@ -59,4 +54,4 @@ Kullanıcı Rolleri ve Gereksinimler Projede kullanıcı rolleri ve gereksinimle
 - Restoran Yöneticisi: Yemek ekleyebilir, güncelleyebilir, siparişleri takip edebilir.
 - Kurye: Teslimat durumlarını güncelleyebilir, atanan siparişleri görüntüleyebilir.
 - Sistem Yöneticisi: Tüm restoranları, kullanıcıları ve siparişleri yönetebilir, gerektiğinde siparişleri iptal edebilir veya düzenleyebilir.
-- Emirhan YENTUR-Eyüp GÖK-Emirhan GÜNEY
+
